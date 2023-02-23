@@ -1,0 +1,23 @@
+<%-include('../components/head.ejs') %>
+    <!-- qr css -->
+    <link rel="stylesheet" href="/client/css/qr.css">
+
+    <!-- qr js -->
+    <script src="/client/library/jsQR.js" defer></script>
+    <script src="/client/js/qr.js" defer></script>
+</head>
+<body>
+    <div class="mainContainer">
+        <header class="mainHeader">
+            <p class="qrWaitTxt">
+                QR코드를 인식 중입니다
+            </p>
+        </header>
+        <div class="qrContents">
+            <div class="qrWrap">
+                <canvas id="qrCanvas"></canvas>
+            </div>
+        </div>
+    </div>
+
+<%-include('../components/nav.ejs') %>

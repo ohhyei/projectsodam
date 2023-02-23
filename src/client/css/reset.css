@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard-Regular';
+    font-size: 1rem;
+    color: #333;
+    word-break: keep-all;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+button {
+    background-color: unset;
+    border: 0;
+    cursor: pointer;
+}
+
+.wrap {
+    padding-inline: 5%;
+}

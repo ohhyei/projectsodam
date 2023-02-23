@@ -1,0 +1,117 @@
+#mapNav {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 9998;
+}
+
+#mapNav > ul {
+    height: 80px;
+    white-space: nowrap;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#mapNav > ul::-webkit-scrollbar {
+    display: none;
+}
+
+#mapNav > ul > li {
+    height: 36px;
+    margin-top: 24px;
+    margin-right: 8px;
+    padding: 4px 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 8px 4px #cccccc66;
+    border-radius: 18px;
+}
+
+#mapNav > ul > li:first-of-type {
+    margin-left: 5%;
+}
+
+#mapNav > ul > li:last-of-type {
+    margin-right: 5%;
+}
+
+#mapNav > ul > li > .svgBox {
+    margin-right: 4px;
+}
+
+#mapNav > ul > li > .svgBox > i {
+    font-size: 1.25rem;
+}
+
+#mapNav > ul > li > .svgBox > i:first-of-type {
+    display: block;
+    color: #cccccc;
+}
+
+#mapNav > ul > li > .svgBox > i:last-of-type {
+    display: none;
+}
+
+#mapNav > ul > li > p {
+    color: #ccc;
+}
+
+#mapNav > ul > .mapCategoryOn {
+    background-color: #e52538;
+    color: white;
+}
+
+#mapNav > ul > .mapCategoryOn > .svgBox > i:first-of-type {
+    display: none;
+}
+
+#mapNav > ul > .mapCategoryOn > .svgBox > i:last-of-type {
+    display: block;
+    color: white;
+}
+
+#mapNav > ul > .mapCategoryOn > p {
+    color: white;
+}
+
+#map { 
+    width: 100%; 
+    height: 100vh; 
+    margin: 0 auto; 
+}
+
+.mapWrap {
+    position: absolute;
+
+    left: 0;
+    bottom: 40px;
+    width: 288px;
+    height: 132px;
+    margin-left: -144px;
+    text-align: left;
+    overflow: hidden;
+    font-size: 12px;
+    font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;
+    line-height: 1.5;
+}
+
+.mapWrap {
+    width: 224px;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    border: 84px;
+}
+
+.wrap .info {width: 286px;height: 120px;border-radius: 5px;border-bottom: 2px solid #ccc;border-right: 1px solid #ccc;overflow: hidden;background: #fff;}
+.wrap .info:nth-child(1) {border: 0;box-shadow: 0px 1px 2px #888;}
+.info .title {padding: 5px 0 0 10px;height: 30px;background: #eee;border-bottom: 1px solid #ddd;font-size: 18px;font-weight: bold;}
+.info .close {position: absolute;top: 10px;right: 10px;color: #888;width: 17px;height: 17px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png');}
+.info .close:hover {cursor: pointer;}
+.info .desc {position: relative;margin: 13px 0 0 90px;height: 75px;}
+.desc .ellipsis {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.info .img {position: absolute;top: 6px;left: 5px;width: 73px;height: 71px;border: 1px solid #ddd;color: #888;overflow: hidden;}
+.info:after {content: '';position: absolute;margin-left: -12px;left: 50%;bottom: 0;width: 22px;height: 12px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}

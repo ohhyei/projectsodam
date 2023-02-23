@@ -1,0 +1,60 @@
+<%-include('../components/head.ejs') %>
+    <!-- map css -->
+    <link rel="stylesheet" href="/client/css/map.css">
+
+    <!-- map js -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1a0b9adf356fd494ac95b87c512c1a53"></script>
+    <script src="/client/js/map.js" defer></script>
+</head>
+<body>
+    <div class="mainContainer">
+        <header class="mainHeader">
+            <div class="mainHeaderWrap">
+                <nav id="mapNav">
+                    <ul>
+                        <li class="mapCategory mapCategoryOn" data-category="interior">
+                            <div class="svgBox">
+                                <i class="ri-plant-line"></i>
+                                <i class="ri-plant-fill"></i>
+                            </div>
+                            <p>
+                                인테리어
+                            </p>
+                        </li>
+                        <li class="mapCategory" data-category="stationery">
+                            <div class="svgBox">
+                                <i class="ri-quill-pen-line"></i>
+                                <i class="ri-quill-pen-fill"></i>
+                            </div>
+                            <p>
+                                문구사무
+                            </p>
+                        </li>
+                        <li class="mapCategory" data-category="fashion">
+                            <div class="svgBox">
+                                <i class="ri-t-shirt-line"></i>
+                                <i class="ri-t-shirt-fill"></i>
+                            </div>
+                            <p>
+                                패션잡화
+                            </p>
+                        </li>
+                        <li class="mapCategory" data-category="grocery">
+                            <div class="svgBox">
+                                <i class="ri-goblet-line"></i>
+                                <i class="ri-goblet-fill"></i>
+                            </div>
+                            <p>
+                                식료품
+                            </p>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="mainContents">
+            <div id="map">
+            </div>
+        </div>
+    </div>
+<%-include('../components/nav.ejs') %>
