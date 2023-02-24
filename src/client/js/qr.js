@@ -1,4 +1,4 @@
-const bottomMsg = (msg) => {
+const centerMsg = (msg) => {
     const Toast = Swal.mixin({
         toast: true,
         position: "center",
@@ -19,7 +19,7 @@ const doFetch = async (code) => {
     })).json();
     if(data.code === "OK") location.href = "/course"
     else {
-        bottomMsg(data.message);
+        centerMsg(data.message);
         setTimeout(startScan, 3000);
     }
 }

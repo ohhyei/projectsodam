@@ -103,7 +103,7 @@
 
     const movePage = (e) => {
         const clickUrl = e.currentTarget.dataset.url;
-        // if (clickUrl === "/qr" && phoneTypeCheck() != "pc") return window.HybridApp.QR_Btn();
+        if (clickUrl === "/qr" && phoneTypeCheck() != "pc") return window.HybridApp.QR_Btn();
         location.href = clickUrl;
     }
 

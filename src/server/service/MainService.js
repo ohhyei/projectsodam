@@ -1,7 +1,7 @@
 import { Error } from "../error/Error";
 import { DbMainRepository } from "../models/DbMainRepository";
 
-export class MainService {
+export default class MainService {
     static repository = new DbMainRepository();
 
     static async getAllCourse() {
